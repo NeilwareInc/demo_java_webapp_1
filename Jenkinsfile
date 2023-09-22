@@ -40,8 +40,8 @@ pipeline {
 
         stage("Backup to DockerHub") {
             steps {
-                sh "docker tag java-web-app1:newest florenceomoruyi/java-web-app1:${env.IMAGE_TAG}"
-                sh "docker push florenceomoruyi/java-web-app1:${env.IMAGE_TAG}"
+                sh "docker tag demo_java_webapp_1:newest aovlabile/demo_java_webapp_1:${env.IMAGE_TAG}"
+                sh "docker push aovlabile/demo_java_webapp_1:${env.IMAGE_TAG}"
             }
         }
     }

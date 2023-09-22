@@ -1,9 +1,9 @@
 ---
 version: '3'
 services:
-    java-web-app1:
-        image: java-web-app1:newest
-        container_name: java-web-app1
+    demo_java_webapp_1:
+        image: demo_java_webapp_1:newest
+        container_name: demo_java_webapp_1
         build:
             context: .
             dockerfile: Dockerfile
